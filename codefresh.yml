@@ -3,13 +3,5 @@ steps:
   build_step:
     title: "Building image..."
     type: build
-    image_name: containers101/reactstarterkit
+    image_name: aloncodefresh/cf-3696-repo-b
 
-  push_to_registry:
-    title: Pushing to Docker Registry
-    type: push
-    candidate: '${{build_step}}'
-    tag: '${{CF_BRANCH}}'
-    credentials:
-      username: '${{DOCKER_USER_NANE}}'
-      password: '${{DOCKER_PASSWORD}}'
