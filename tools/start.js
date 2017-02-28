@@ -25,7 +25,7 @@ const [config] = webpackConfig;
  * synchronizing URLs, interactions and code changes across multiple devices.
  */
 async function start() {
-  console.log("cf-3696-repo-b -- START revision 0");
+  console.log("cf-3696-repo-b -- START revision 1");
   await run(clean);
   await run(copy);
   await new Promise(resolve => {
